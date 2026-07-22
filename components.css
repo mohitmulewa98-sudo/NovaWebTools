@@ -1,0 +1,52 @@
+/* ============================================================
+   components.css — Tool grid, cards, category headers, ad slots
+   ============================================================ */
+
+/* ---------- Ad slot ---------- */
+.ad-slot{
+  max-width:1180px; margin:28px auto; padding:14px 24px;
+}
+.ad-slot .ad-inner{
+  border:1px dashed var(--line); border-radius:10px; padding:14px;
+  display:flex; align-items:center; justify-content:center;
+  font-family:var(--font-mono); font-size:.7rem; letter-spacing:.06em; text-transform:uppercase;
+  color:var(--text-dim); min-height:64px;
+}
+
+/* ---------- Tool grid ---------- */
+.category-block{margin-top:44px;}
+.category-head{display:flex; align-items:center; gap:12px; margin-bottom:18px;}
+.category-head .dot{width:10px; height:10px; border-radius:50%;}
+.category-head h2{font-size:1.3rem; font-weight:600;}
+.category-head .count{font-family:var(--font-mono); font-size:.75rem; color:var(--text-dim);}
+
+.grid{
+  display:grid; grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); gap:16px;
+}
+.card{
+  text-align:left; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+  padding:18px; position:relative; overflow:hidden;
+  display:flex; flex-direction:column; gap:10px;
+  transition:transform .15s ease, border-color .15s ease, box-shadow .15s ease;
+}
+.card::before{
+  content:''; position:absolute; top:0; left:0; right:0; height:3px;
+  background:var(--accent, var(--flare));
+}
+.card:hover{transform:translateY(-3px); border-color:var(--text-dim); box-shadow:var(--shadow);}
+.card .icon-wrap{
+  width:38px; height:38px; border-radius:10px;
+  display:flex; align-items:center; justify-content:center;
+  background:color-mix(in srgb, var(--accent, var(--flare)) 16%, transparent);
+  color:var(--accent, var(--flare));
+}
+.card .icon-wrap svg{width:19px; height:19px;}
+.card h3{font-size:1rem; font-weight:600;}
+.card p{margin:0; font-size:.85rem; color:var(--text-dim); flex-grow:1;}
+.card .launch{font-family:var(--font-mono); font-size:.72rem; color:var(--text-dim); display:flex; align-items:center; gap:6px;}
+.card:hover .launch{color:var(--accent, var(--flare));}
+
+.empty-state{
+  text-align:center; padding:60px 20px; color:var(--text-dim);
+}
+.empty-state h3{font-size:1.1rem; color:var(--text); margin-bottom:8px;}

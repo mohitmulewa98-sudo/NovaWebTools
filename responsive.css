@@ -1,0 +1,9 @@
+/* ============================================================
+   responsive.css — Breakpoint overrides
+   ============================================================ */
+
+@media (max-width:760px){
+  .footer-grid{grid-template-columns:1fr; gap:24px;}
+  .hero{padding:52px 0 30px;}
+  .grid{grid-template-columns:repeat(auto-fill, minmax(150px,1fr));}
+}
