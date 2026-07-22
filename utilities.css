@@ -1,0 +1,16 @@
+/* ============================================================
+   utilities.css — Small helper classes used by individual tools
+   ============================================================ */
+
+.switch-row{display:flex; align-items:center; gap:8px; font-size:.85rem; color:var(--text-dim); margin-bottom:10px;}
+.swatch{width:100%; height:64px; border-radius:9px; border:1px solid var(--line); margin-top:10px;}
+.todo-item{display:flex; align-items:center; gap:10px; padding:9px 0; border-bottom:1px solid var(--line);}
+.todo-item input[type=checkbox]{width:17px; height:17px; accent-color:var(--flare);}
+.todo-item span{flex-grow:1; font-size:.9rem;}
+.todo-item.done span{text-decoration:line-through; color:var(--text-dim);}
+.todo-item button{background:none; border:none; color:var(--text-dim); font-size:.85rem;}
+.todo-item button:hover{color:var(--danger);}
+.small-note{font-size:.75rem; color:var(--text-dim); margin-top:10px;}
+.stopwatch-display{font-family:var(--font-mono); font-size:2.4rem; text-align:center; padding:20px 0; color:var(--accent,var(--flare)); font-weight:600;}
+.lap-list{max-height:140px; overflow-y:auto; font-family:var(--font-mono); font-size:.82rem; color:var(--text-dim);}
+.lap-list div{display:flex; justify-content:space-between; padding:5px 0; border-bottom:1px solid var(--line);}
