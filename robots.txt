@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://mohitmulewa98-sudo.github.io/NovaWebTools/sitemap.xml
